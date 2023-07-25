@@ -3,13 +3,13 @@ let speed = 10;
 let x = canvSize / 2;
 let y = canvSize / 2;
 let H = 0;
-let S = 128;
+let S = 200;
 
 function setup() {
   createCanvas(canvSize, canvSize);
   background(0);
   textSize(20);
-  colorMode(HSL, 360, 255, 255, 255); // Hue, Saturation, Lightness
+  colorMode(HSB, 255); // Hue, Saturation, Lightness
 }
 
 function draw() {
@@ -23,8 +23,8 @@ function draw() {
     for (let i = 0; i < speed; i++) {
       x = walk(x, canvSize);
       y = walk(y, canvSize);
-      H = walk(H, 360);
-      S = walk(S, 200);
+      H = walk(H, 255);
+      S = walk(S, 255);
       stroke(H, S, 255, 10);
       point(x, y);
     }
