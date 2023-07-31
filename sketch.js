@@ -14,10 +14,10 @@ function setup() {
 
 function draw() {
   if (keyIsDown(UP_ARROW)) {
-    speed += 1;
+    speed *= 1.01;
   }
   if (keyIsDown(DOWN_ARROW)) {
-    speed -= 1;
+    speed /= 1.01;
   }
   if (keyIsPressed) {
     for (let i = 0; i < speed; i++) {
