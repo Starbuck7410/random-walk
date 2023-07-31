@@ -1,4 +1,4 @@
-#Random Walk Visual Generator
+# Random Walk Visual Generator
 
 Simple random walk visual generator thing written in P5.js
 
